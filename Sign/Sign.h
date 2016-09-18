@@ -10,4 +10,6 @@
 
 @interface Sign : NSObject
 
++(NSString*)sign:(NSMutableDictionary*)dic;
+
 @end
