@@ -8,8 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
+typedef NSString * SYHSignName NS_EXTENSIBLE_STRING_ENUM;
+
 @interface Sign : NSObject
 
-+(NSString*)sign:(NSMutableDictionary*)dic;
++(NSString*)sign:(id)parameters;
+
+extern SYHSignName const SYHSignAppKey;
+extern SYHSignName const SYHSignAppValue;
 
 @end
