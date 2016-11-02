@@ -75,7 +75,7 @@ SYHSignName const SYHSignAppValue = @"ios_syh_sign_app_value";
         
         [sign appendString:/*apiKey*/valueString];
         
-        NSLog(@"sign-->%@,md5-->%@",sign,[Sign md5:[Sign md5:sign]]);
+        //NSLog(@"sign-->%@,md5-->%@",sign,[Sign md5:[Sign md5:sign]]);
         
         return [Sign md5:[Sign md5:sign]];
     }
