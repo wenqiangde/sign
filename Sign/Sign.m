@@ -62,7 +62,7 @@ SYHSignName const SYHSignAppValue = @"ios_syh_sign_app_value";
             
             NSString* val = [NSString stringWithFormat:@"%@",[dic objectForKey:key]];
             
-            if (!(val == nil || val.length == 0)) {
+            if (val != nil) {
                 
                 [sign appendString:key];
                 [sign appendString:@"="];
